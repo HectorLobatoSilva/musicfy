@@ -42,7 +42,6 @@ export default function RegisterForm({ setSelectedForm }) {
         setFormError(errors)
 
         if (formOk) {
-            console.log("formulario valido")
             setIsLoading(true)
 
             firebase

@@ -44,7 +44,6 @@ export default function LoginForm({ setSelectedForm }) {
         setFormError(errors)
 
         if (formOk) {
-            console.log("ok")
             setIsLoading(true)
             firebase.auth().signInWithEmailAndPassword(formData.email, formData.password).then(response => {
                 setUser(response.user)
